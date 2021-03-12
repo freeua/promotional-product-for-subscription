@@ -12,20 +12,16 @@ Increase your sales by allowing your customers to add promotional products to th
 
 == Description ==
 
-A custom addon for Woocommerce Subscriptions, which add a promotional product to the currently active user subscription and remove it after regular payment.
-
-= Take Credit card payments easily and directly on your store =
-
-The Vantiv plugin extends WooCommerce allowing you to take payments directly on your store via Vantiv’s API.  Plugin uses The Vantiv Express API
-[Express API link](https://developer.vantiv.com/docs/DOC-1353).
+A custom addon for Woocommerce Subscriptions, which add a promotional product to the currently active user subscription and remove it after regular payment. Billing happens through the saved payment option on the renewal date.
+For creating a promotional product that can be added to the subscription in option "Product data" in admin was added additional tab "Upsell product for subscription". The new tab contains the options that do product an upsell product for subscription and the field that allows changing the button name for adding product to subscription.
 
 == Installation ==
 
 = Automatic installation =
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser. To do an automatic install of the WooCommerce Vantiv plugin, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser. To do an automatic install of the Promotional Product for Subscription plugin, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
 
-In the search field type “WooCommerce Vantiv Gateway” and click Search Plugins. Once you’ve found our plugin you can view details about it such as the point release, rating, and description. Most importantly, of course, you can install it by simply clicking "Install Now", then "Activate".
+In the search field type “Promotional Product for Subscription” and click Search Plugins. Once you’ve found our plugin you can view details about it such as the point release, rating, and description. Most importantly, of course, you can install it by simply clicking "Install Now", then "Activate".
 
 = Manual Upload via WordPress Admin =
 
@@ -54,25 +50,25 @@ This procedure requires you to be familiar with the process of transferring file
 
 == Frequently Asked Questions ==
 
-= Does this support recurring payments, like for subscriptions? =
+= Does this work without WooCommerce or  WooCommerce Subscriptions?? =
 
 No
 
-= Does this require an SSL certificate? =
+= Does the plugin support translations to other languages? =
 
-Yes! In Live Mode, an SSL certificate must be installed on your site to use Vantiv. 
+Yes, the plugin can be translated using the [Loco Translate](https://uk.wordpress.org/plugins/loco-translate/) plugin.
 
-= Does this support both production mode and sandbox mode for testing? =
+= What happens if a user who has no subscription wants to add a product to a subscription? =
 
-Yes, it does - production and Test (sandbox) mode is driven by the API keys you use with a checkbox in the admin settings to toggle between both.
+A message appears stating that you have no active subscriptions, first please create a subscription.
 
 = Where can I get support or talk to other users? =
 
 If you get stuck, you can ask for help in the Plugin Forum.
 
 == Screenshots ==
-1. The Vantiv payment gateway settings screen used to configure the main Vantiv gateway.
-2. Pay with a Vantiv payment method on checkout page 
+1. The product tab "Upsell product for subscription" setting.
+2. The view on single product page 
 
 == Changelog ==
 
