@@ -90,12 +90,12 @@ if ( !class_exists( 'PPS_Custom_Product_Tab' ) ) {
         public static function save_meta_fields_product_for_subscription( $post_id ){
             // save the add_subscription_button_label field data
             if( isset( $_POST['add_subscription_button_label'] ) ) {
-                update_post_meta( $post_id, 'add_subscription_button_label', esc_attr( $_POST['add_subscription_button_label'] ) );
+                update_post_meta( $post_id, 'add_subscription_button_label', sanitize_text_field( $_POST['add_subscription_button_label'] ) );
             }
 
             // save the maybe_upsell_product_for_subscription field data
             if( isset( $_POST['maybe_upsell_product_for_subscription'] ) ) {
-                update_post_meta( $post_id, 'maybe_upsell_product_for_subscription', esc_attr( $_POST['maybe_upsell_product_for_subscription'] ) );
+                update_post_meta( $post_id, 'maybe_upsell_product_for_subscription', sanitize_text_field( $_POST['maybe_upsell_product_for_subscription'] ) );
             }
             else{
             	delete_post_meta( $post_id, 'maybe_upsell_product_for_subscription' );
